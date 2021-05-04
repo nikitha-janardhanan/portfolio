@@ -110,13 +110,13 @@ img{
   margin-right: var(--mb-2);
 }
 .l-header{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+  width: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: var(--z-fixed) !important;
+  background-color: #fff !important;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15) !important;
 }
 
 /*===== NAV =====*/
