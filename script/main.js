@@ -43,6 +43,19 @@ const sr = ScrollReveal({
     reset: true
 });
 
+const wsr = ScrollReveal({
+    origin: 'top',
+    distance: '100px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    viewFactor : 0.2,
+    viewOffset: {
+        top: 50,
+        bottom: 50
+    },
+    reset: true
+});
+
 
 
 /*SCROLL HOME*/
@@ -56,7 +69,19 @@ sr.reveal('#home',{ beforeReveal: () => {
 sr.reveal('.home__title',{});
 sr.reveal('.button',{delay: 200});
 sr.reveal('.home__img',{delay: 400});
-sr.reveal('.home__social-icon',{ interval: 200});
+ScrollReveal.reveal('.home__social-icon',{
+  interval: 200,
+  origin: 'top',
+  distance: '100px',
+  duration: 1000,
+  easing: 'ease-in-out',
+  viewFactor : 0.2,
+  viewOffset: {
+      top: 50,
+      bottom: 0
+  },
+  reset: true
+});
 
 
 /*SCROLL ABOUT*/
@@ -92,7 +117,7 @@ sr.reveal('#work',{ beforeReveal: () => {
     document.querySelector('#worklink').classList.remove('active')
   }
 });
-sr.reveal('.work__img',{interval: 200});
+wsr.reveal('.work__img',{interval: 200});
 
 
 /* Scroll Experience */
