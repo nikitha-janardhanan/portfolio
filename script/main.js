@@ -35,7 +35,7 @@ const sr = ScrollReveal({
     easing: 'ease-in-out',
     viewFactor : 0.5,
     viewOffset: {
-        top: 10,
+        top: 100,
         right: 0,
         bottom: 50,
         left: 0,
@@ -56,6 +56,14 @@ const wsr = ScrollReveal({
     reset: true
 });
 
+const social = ScrollReveal({
+  interval: 500,
+  origin: 'top',
+  distance: '100px',
+  duration: 1000,
+  easing: 'ease-in-out',
+  reset: true
+});
 
 
 /*SCROLL HOME*/
@@ -69,19 +77,7 @@ sr.reveal('#home',{ beforeReveal: () => {
 sr.reveal('.home__title',{});
 sr.reveal('.button',{delay: 200});
 sr.reveal('.home__img',{delay: 400});
-sr.reveal('.home__social-icon',{
-  interval: 200,
-  origin: 'top',
-  distance: '100px',
-  duration: 1000,
-  easing: 'ease-in-out',
-  viewFactor : 0.2,
-  viewOffset: {
-      top: 50,
-      bottom: 0
-  },
-  reset: true
-});
+social.reveal('.home__social-icon',{delay: 200});
 
 
 /*SCROLL ABOUT*/
@@ -106,7 +102,7 @@ sr.reveal('#skills',{ beforeReveal: () => {
 });
 sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{});
-sr.reveal('.skills__data',{interval: 200});
+sr.reveal('.skills__data',{interval: 500});
 
 
 /*SCROLL WORK*/
@@ -121,7 +117,7 @@ wsr.reveal('.work__img',{interval: 200});
 
 
 /* Scroll Experience */
-sr.reveal('.experience__subtitle',{interval: 400});
+sr.reveal('.experience__subtitle',{interval: 500});
 sr.reveal('.experience__text',{delay: 400});
 sr.reveal('#experience',{ beforeReveal: () => {
     document.querySelector('#explink').classList.add('active')
@@ -132,7 +128,7 @@ sr.reveal('#experience',{ beforeReveal: () => {
 });
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200});
+sr.reveal('.contact__input',{interval: 500});
 sr.reveal('#contact',{beforeReveal: () => {
     document.querySelector('#contactlink').classList.add('active')
   },

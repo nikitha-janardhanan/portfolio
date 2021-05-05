@@ -435,7 +435,7 @@ img{
     align-self: flex-end;
   }
   .home__social-icon{
-    margin-bottom: 0;
+    margin-bottom: 200px;
     margin-right: var(--mb-4);
   }
   .home__img{
