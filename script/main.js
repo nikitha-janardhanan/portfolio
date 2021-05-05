@@ -62,6 +62,10 @@ const social = ScrollReveal({
   distance: '100px',
   duration: 1000,
   easing: 'ease-in-out',
+  viewOffset: {
+      top: 0,
+      bottom: 0
+  },
   reset: true
 });
 
